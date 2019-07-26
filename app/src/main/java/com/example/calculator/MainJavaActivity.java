@@ -14,15 +14,10 @@ public class MainJavaActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         Button btnSave = findViewById(R.id.btn_save);
-
         final EditText etName = findViewById(R.id.et_name);
-
         final TextView tvName = findViewById(R.id.tv_user_name);
-
         final TextView displayText = findViewById(R.id.tv_user_name);
-
         final EditText etNumberOne = findViewById(R.id.et_number_one);
         final EditText etNumberTwo = findViewById(R.id.et_number_two);
         Button btnAdd = findViewById(R.id.btn_add);
@@ -35,8 +30,8 @@ public class MainJavaActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                String userName = etName.getText().toString();
-                displayText.setText("Hello " + userName + "!");
+                String usrName = etName.getText().toString();
+                displayText.setText("Hello " + usrName + "!");
             }
         });
 
@@ -48,7 +43,6 @@ public class MainJavaActivity extends AppCompatActivity {
 
                 int a = Integer.parseInt(numberOne);
                 int b = Integer.parseInt(numberTwo);
-
                 int result = a + b;
 
                 tvResult.setText(Integer.toString(result));
@@ -63,7 +57,6 @@ public class MainJavaActivity extends AppCompatActivity {
 
                 int a = Integer.parseInt(numberOne);
                 int b = Integer.parseInt(numberTwo);
-
                 int result = a * b;
 
                 tvResult.setText(Integer.toString(result));
@@ -78,7 +71,6 @@ public class MainJavaActivity extends AppCompatActivity {
 
                 int a = Integer.parseInt(numberOne);
                 int b = Integer.parseInt(numberTwo);
-
                 int result = a - b;
 
                 tvResult.setText(Integer.toString(result));
@@ -96,10 +88,10 @@ public class MainJavaActivity extends AppCompatActivity {
                 Double db = new Double(b);
 
                 String result = "";
+
                 if (db == 0) {
                     result = "Er!";
                 } else {
-                    //    result = a/db;
                     result = String.format("%.2f", (a / db));
                 }
                 tvResult.setText(result);
