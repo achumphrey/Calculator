@@ -1,4 +1,10 @@
 <resources>
     <string name="app_name">Calculator</string>
-    <string name="label_name">Augustine Chukwunyere Humphrey</string>
+    <string name="label_name">Name:</string>
+    <string name="hint_name">Please enter your name</string>
+    <string name="label_save">Save</string>
+    <string name="btn_add">ADD</string>
+    <string name="btn_subtract">Subtract</string>
+    <string name="btn_multiply">Multiply</string>
+    <string name="btn_divide">Divide</string>
 </resources>
