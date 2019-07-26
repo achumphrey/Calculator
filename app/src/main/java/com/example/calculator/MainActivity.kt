@@ -12,7 +12,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         btn_save.setOnClickListener {
-        tv_user_name.text = "Hello " + et_name.toString()
+        tv_user_name.text = "Hello ${et_name.text.toString()}!"
         }
 
         btn_add.setOnClickListener {
@@ -39,7 +39,8 @@ class MainActivity : AppCompatActivity() {
             var db: Double = b.toDouble()
 
             if (db.equals(0.0)) {
-                tv_result.text = (0).toString()
+                tv_result.text = "Er!"
+            //    tv_result.text = (0).toString()
             }else{
            //     val dbFormated:Double = String.format("%.2f", (a/db)).toDouble()
             //    tv_result.text = (a/db).toString()

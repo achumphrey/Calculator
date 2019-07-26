@@ -95,15 +95,17 @@ public class MainJavaActivity extends AppCompatActivity {
                 int b = Integer.parseInt(numberTwo);
                 Double db = new Double(b);
 
-                double result;
+                String result = "";
                 if (db == 0) {
-                    result = 0;
-                }else{
-                    result = a/db;
+                    result = "Er!";
+                } else {
+                    //    result = a/db;
+                    result = String.format("%.2f", (a / db));
                 }
-                String dbresult = String.format("%.2f", result);
-                tvResult.setText(dbresult);
+                tvResult.setText(result);
             }
         });
+
     }
 }
+
