@@ -14,5 +14,36 @@ class MainActivity : AppCompatActivity() {
         btn_save.setOnClickListener {
         tv_user_name.text = "Hello " + et_name.toString()
         }
+
+        btn_add.setOnClickListener {
+            var a: Int = et_number_one.text.toString().toInt()
+            var b: Int = et_number_two.text.toString().toInt()
+            tv_result.text = (a + b).toString()
+        }
+
+        btn_multiply.setOnClickListener {
+            var a: Int = et_number_one.text.toString().toInt()
+            var b: Int = et_number_two.text.toString().toInt()
+            tv_result.text = (a * b).toString()
+        }
+
+        btn_subtract.setOnClickListener {
+            var a: Int = et_number_one.text.toString().toInt()
+            var b: Int = et_number_two.text.toString().toInt()
+            tv_result.text = (a - b).toString()
+        }
+
+        btn_divide.setOnClickListener {
+            var a: Int = et_number_one.text.toString().toInt()
+            var b: Int = et_number_two.text.toString().toInt()
+            var db: Double = b.toDouble()
+
+            if (db.equals(0.0)) {
+                tv_result.text = (0).toString()
+            }else{
+                tv_result.text = (a/db).toString()
+            }
+            tv_result.text = (a / b).toString()
+        }
     }
 }

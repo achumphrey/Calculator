@@ -21,7 +21,7 @@ public class MainJavaActivity extends AppCompatActivity {
 
         final TextView tvName = findViewById(R.id.tv_user_name);
 
-        final TextView displayText = findViewById(R.id.tv_result);
+        final TextView displayText = findViewById(R.id.tv_user_name);
 
         final EditText etNumberOne = findViewById(R.id.et_number_one);
         final EditText etNumberTwo = findViewById(R.id.et_number_two);
@@ -35,8 +35,8 @@ public class MainJavaActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                String string = etName.getText().toString();
-                displayText.setText("Hello " + string);
+                String userName = etName.getText().toString();
+                displayText.setText("Hello " + userName + "!");
             }
         });
 
