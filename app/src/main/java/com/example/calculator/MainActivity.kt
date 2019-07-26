@@ -41,9 +41,11 @@ class MainActivity : AppCompatActivity() {
             if (db.equals(0.0)) {
                 tv_result.text = (0).toString()
             }else{
-                tv_result.text = (a/db).toString()
+           //     val dbFormated:Double = String.format("%.2f", (a/db)).toDouble()
+            //    tv_result.text = (a/db).toString()
+                tv_result.text = String.format("%.2f", (a/db))
             }
-            tv_result.text = (a / b).toString()
+
         }
     }
 }
