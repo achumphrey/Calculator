@@ -97,7 +97,6 @@ public class MainJavaActivity extends AppCompatActivity {
                 tvResult.setText(result);
             }
         });
-
     }
 }
 
