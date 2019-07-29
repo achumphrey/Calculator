@@ -38,11 +38,28 @@ public class MainJavaActivity extends AppCompatActivity {
         btnAdd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String numberOne = etNumberOne.getText().toString();
-                String numberTwo = etNumberTwo.getText().toString();
 
-                int a = Integer.parseInt(numberOne);
-                int b = Integer.parseInt(numberTwo);
+                int a;
+                int b;
+                //    String numberOne;
+                //   String numberTwo;
+                if(etNumberOne.getText().toString().equals("")) {
+                    a = 0;
+                }else{
+                    a = Integer.parseInt(etNumberOne.getText().toString());
+                }
+
+                if(etNumberTwo.getText().toString().equals("")) {
+                    b = 0;
+                }else{
+                    b = Integer.parseInt(etNumberTwo.getText().toString());
+                }
+
+         /*       String numberOne = etNumberOne.getText().toString();
+                String numberTwo = etNumberTwo.getText().toString();
+*/
+         /*       int a = Integer.parseInt(numberOne);
+                int b = Integer.parseInt(numberTwo);*/
                 int result = a + b;
 
                 tvResult.setText(Integer.toString(result));
@@ -52,11 +69,28 @@ public class MainJavaActivity extends AppCompatActivity {
         btnMultiply.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String numberOne = etNumberOne.getText().toString();
-                String numberTwo = etNumberTwo.getText().toString();
 
-                int a = Integer.parseInt(numberOne);
-                int b = Integer.parseInt(numberTwo);
+                int a;
+                int b;
+                //    String numberOne;
+                //   String numberTwo;
+                if(etNumberOne.getText().toString().equals("")) {
+                    a = 0;
+                }else{
+                    a = Integer.parseInt(etNumberOne.getText().toString());
+                }
+
+                if(etNumberTwo.getText().toString().equals("")) {
+                    b = 0;
+                }else{
+                    b = Integer.parseInt(etNumberTwo.getText().toString());
+                }
+
+          /*      String numberOne = etNumberOne.getText().toString();
+                String numberTwo = etNumberTwo.getText().toString();*/
+
+         //       int a = Integer.parseInt(numberOne);
+         //       int b = Integer.parseInt(numberTwo);
                 int result = a * b;
 
                 tvResult.setText(Integer.toString(result));
@@ -66,11 +100,27 @@ public class MainJavaActivity extends AppCompatActivity {
         btnSubtract.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String numberOne = etNumberOne.getText().toString();
-                String numberTwo = etNumberTwo.getText().toString();
 
-                int a = Integer.parseInt(numberOne);
-                int b = Integer.parseInt(numberTwo);
+                int a;
+                int b;
+                //    String numberOne;
+                //   String numberTwo;
+                if(etNumberOne.getText().toString().equals("")) {
+                    a = 0;
+                }else{
+                    a = Integer.parseInt(etNumberOne.getText().toString());
+                }
+
+                if(etNumberTwo.getText().toString().equals("")) {
+                    b = 0;
+                }else{
+                    b = Integer.parseInt(etNumberTwo.getText().toString());
+                }
+              /*  String numberOne = etNumberOne.getText().toString();
+                String numberTwo = etNumberTwo.getText().toString();
+*/
+            /*    int a = Integer.parseInt(numberOne);
+                int b = Integer.parseInt(numberTwo);*/
                 int result = a - b;
 
                 tvResult.setText(Integer.toString(result));
@@ -80,11 +130,29 @@ public class MainJavaActivity extends AppCompatActivity {
         btnDivide.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String numberOne = etNumberOne.getText().toString();
-                String numberTwo = etNumberTwo.getText().toString();
 
-                int a = Integer.parseInt(numberOne);
+                int a;
+                int b;
+            //    String numberOne;
+             //   String numberTwo;
+                if(etNumberOne.getText().toString().equals("")) {
+                   a = 0;
+                }else{
+                    a = Integer.parseInt(etNumberOne.getText().toString());
+                }
+
+                if(etNumberTwo.getText().toString().equals("")) {
+                    b = 0;
+                }else{
+                    b = Integer.parseInt(etNumberTwo.getText().toString());
+                }
+        //        String numberOne = etNumberOne.getText().toString();
+         //       String numberTwo = etNumberTwo.getText().toString();
+
+
+         /*     int a = Integer.parseInt(numberOne);
                 int b = Integer.parseInt(numberTwo);
+           */
                 Double db = new Double(b);
 
                 String result = "";
