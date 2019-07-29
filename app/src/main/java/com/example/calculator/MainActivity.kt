@@ -23,20 +23,71 @@ class MainActivity : AppCompatActivity() {
         }
 
         btn_add.setOnClickListener {
-            var a: Int = et_number_one.text.toString().toInt()
-            var b: Int = et_number_two.text.toString().toInt()
+
+            var a: Int = 0
+            var b: Int = 0
+
+            if (et_number_one.getText().toString() == "") {
+                a = 0
+            } else {
+                a = Integer.parseInt(et_number_one.getText().toString())
+            }
+
+            if (et_number_two.getText().toString() == "") {
+                a = 0
+            } else {
+                a = Integer.parseInt(et_number_two.getText().toString())
+            }
+
+        //    var a: Int = et_number_one.text.toString().toInt()
+        //    var b: Int = et_number_two.text.toString().toInt()
+
             tv_result.text = (a + b).toString()
         }
 
         btn_multiply.setOnClickListener {
-            var a: Int = et_number_one.text.toString().toInt()
-            var b: Int = et_number_two.text.toString().toInt()
+
+            var a: Int = 0
+            var b: Int = 0
+
+            if (et_number_one.getText().toString() == "") {
+                a = 0
+            } else {
+                a = Integer.parseInt(et_number_one.getText().toString())
+            }
+
+            if (et_number_two.getText().toString() == "") {
+                a = 0
+            } else {
+                a = Integer.parseInt(et_number_two.getText().toString())
+            }
+
+        //    var a: Int = et_number_one.text.toString().toInt()
+        //    var b: Int = et_number_two.text.toString().toInt()
+
             tv_result.text = (a * b).toString()
         }
 
         btn_subtract.setOnClickListener {
-            var a: Int = et_number_one.text.toString().toInt()
-            var b: Int = et_number_two.text.toString().toInt()
+
+            var a: Int = 0
+            var b: Int = 0
+
+            if (et_number_one.getText().toString() == "") {
+                a = 0
+            } else {
+                a = Integer.parseInt(et_number_one.getText().toString())
+            }
+
+            if (et_number_two.getText().toString() == "") {
+                a = 0
+            } else {
+                a = Integer.parseInt(et_number_two.getText().toString())
+            }
+
+        //    var a: Int = et_number_one.text.toString().toInt()
+        //    var b: Int = et_number_two.text.toString().toInt()
+
             tv_result.text = (a - b).toString()
         }
 
