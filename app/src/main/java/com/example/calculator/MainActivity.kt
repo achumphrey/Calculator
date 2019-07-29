@@ -24,19 +24,19 @@ class MainActivity : AppCompatActivity() {
 
         btn_add.setOnClickListener {
 
-            var a: Int = 0
-            var b: Int = 0
+            var a = 0
+            var b = 0
 
-            if (et_number_one.getText().toString() == "") {
+            if (et_number_one.text.toString() == "") {
                 a = 0
             } else {
-                a = Integer.parseInt(et_number_one.getText().toString())
+                a = Integer.parseInt(et_number_one.text.toString())
             }
 
-            if (et_number_two.getText().toString() == "") {
-                a = 0
+            if (et_number_two.text.toString() == "") {
+                b = 0
             } else {
-                a = Integer.parseInt(et_number_two.getText().toString())
+                b = Integer.parseInt(et_number_two.text.toString())
             }
 
         //    var a: Int = et_number_one.text.toString().toInt()
@@ -57,9 +57,9 @@ class MainActivity : AppCompatActivity() {
             }
 
             if (et_number_two.getText().toString() == "") {
-                a = 0
+                b = 0
             } else {
-                a = Integer.parseInt(et_number_two.getText().toString())
+                b = Integer.parseInt(et_number_two.getText().toString())
             }
 
         //    var a: Int = et_number_one.text.toString().toInt()
@@ -80,9 +80,9 @@ class MainActivity : AppCompatActivity() {
             }
 
             if (et_number_two.getText().toString() == "") {
-                a = 0
+                b = 0
             } else {
-                a = Integer.parseInt(et_number_two.getText().toString())
+                b = Integer.parseInt(et_number_two.getText().toString())
             }
 
         //    var a: Int = et_number_one.text.toString().toInt()
@@ -102,9 +102,9 @@ class MainActivity : AppCompatActivity() {
             }
 
             if (et_number_two.getText().toString() == "") {
-                a = 0
+                b = 0
             } else {
-                a = Integer.parseInt(et_number_two.getText().toString())
+                b = Integer.parseInt(et_number_two.getText().toString())
             }
 
        //     a = et_number_one.text.toString().toInt()
