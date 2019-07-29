@@ -60,7 +60,7 @@
               android:id="@+id/tv_result"
               android:layout_marginTop="@dimen/home_margin_top"
               android:layout_marginBottom="@dimen/home_margin_top"
-              android:textSize="40sp"
+              android:textSize="35sp"
               android:layout_gravity="center"
               android:background="#000000"
               android:textStyle="bold"
