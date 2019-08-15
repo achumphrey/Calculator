@@ -39,9 +39,6 @@ class MainActivity : AppCompatActivity() {
                 b = Integer.parseInt(et_number_two.text.toString())
             }
 
-        //    var a: Int = et_number_one.text.toString().toInt()
-        //    var b: Int = et_number_two.text.toString().toInt()
-
             tv_result.text = (a + b).toString()
         }
 
@@ -50,20 +47,17 @@ class MainActivity : AppCompatActivity() {
             var a: Int = 0
             var b: Int = 0
 
-            if (et_number_one.getText().toString() == "") {
+            if (et_number_one.text.toString() == "") {
                 a = 0
             } else {
-                a = Integer.parseInt(et_number_one.getText().toString())
+                a = Integer.parseInt(et_number_one.text.toString())
             }
 
-            if (et_number_two.getText().toString() == "") {
+            if (et_number_two.text.toString() == "") {
                 b = 0
             } else {
-                b = Integer.parseInt(et_number_two.getText().toString())
+                b = Integer.parseInt(et_number_two.text.toString())
             }
-
-        //    var a: Int = et_number_one.text.toString().toInt()
-        //    var b: Int = et_number_two.text.toString().toInt()
 
             tv_result.text = (a * b).toString()
         }
@@ -73,20 +67,17 @@ class MainActivity : AppCompatActivity() {
             var a: Int = 0
             var b: Int = 0
 
-            if (et_number_one.getText().toString() == "") {
+            if (et_number_one.text.toString() == "") {
                 a = 0
             } else {
-                a = Integer.parseInt(et_number_one.getText().toString())
+                a = Integer.parseInt(et_number_one.text.toString())
             }
 
-            if (et_number_two.getText().toString() == "") {
+            if (et_number_two.text.toString() == "") {
                 b = 0
             } else {
-                b = Integer.parseInt(et_number_two.getText().toString())
+                b = Integer.parseInt(et_number_two.text.toString())
             }
-
-        //    var a: Int = et_number_one.text.toString().toInt()
-        //    var b: Int = et_number_two.text.toString().toInt()
 
             tv_result.text = (a - b).toString()
         }
@@ -95,20 +86,17 @@ class MainActivity : AppCompatActivity() {
             var a: Int = 0
             var b: Int = 0
 
-            if (et_number_one.getText().toString() == "") {
+            if (et_number_one.text.toString() == "") {
                 a = 0
             } else {
-                a = Integer.parseInt(et_number_one.getText().toString())
+                a = Integer.parseInt(et_number_one.text.toString())
             }
 
-            if (et_number_two.getText().toString() == "") {
+            if (et_number_two.text.toString() == "") {
                 b = 0
             } else {
-                b = Integer.parseInt(et_number_two.getText().toString())
+                b = Integer.parseInt(et_number_two.text.toString())
             }
-
-       //     a = et_number_one.text.toString().toInt()
-       //     b = et_number_two.text.toString().toInt()
 
             var db: Double = b.toDouble()
 
